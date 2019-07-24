@@ -1,0 +1,20 @@
+
+model:
+  batch_size: 64
+  num_layers: 4
+  d_model: 128
+  dff: 512
+  num_heads: 8
+  dropout_rate: 0.1
+  epochs: 20
+
+data:
+  origin: ted_hrlr_translate/pt_to_en
+
+vocab:
+  dir: data/vocab
+  en_vocab_path_prefix: data/vocab/en_vocab
+  pt_vocab_path_prefix: data/vocab/pt_vocab
+
+checkpoint_path:
+  checkpoints/train
